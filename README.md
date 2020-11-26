@@ -9,19 +9,22 @@ This is where your description should go. Take a look at [contributing.md](contr
 
 ## Installation
 
-Via Composer
+##### Via Composer
 
 ``` bash
 $ composer require :lc:vendor/:lc:package
 ```
 
-Publish Assets
+##### Integrate :uc:package in your project:
+
+Publish assets:
 ``` bash
 php artisan vendor:publish --provider=":uc:vendor\:uc:package\:uc:packageServiceProvider" --force
 ```
 
-Compile Assets
+Compile assets in package root:
 ``` bash
+npm install
 npm run watch
 ```
 
@@ -30,7 +33,7 @@ Include javascript to `resources/js/app.js`
 require('./../vendor/:lc:vendor/:lc:package/js/app');
 ```
 
-Include styles `resources/sass/app.scss`
+Import styles in `resources/sass/app.scss`
 ``` sass
 @import "../vendor/:lc:vendor/:lc:package/css/app";
 

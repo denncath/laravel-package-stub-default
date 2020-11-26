@@ -65,10 +65,10 @@ class :uc:packageServiceProvider extends ServiceProvider
             __DIR__ . '/../config/:lc:package.php' => config_path(':lc:package.php'),
         ], ':lc:package.config');
 
-        // Publishing the assets
-//        $this->publishes([
-//            __DIR__ . '/../../resources/assets/scss' => resource_path('vendor/:lc:vendor/:lc:package/scss'),
-//        ], 'ui.assets');
+        // Publishing styles
+        $this->publishes([
+            __DIR__ . '/../../resources/assets/scss' => resource_path('vendor/:lc:vendor/:lc:package/scss'),
+        ], 'ui.assets');
 
         // Registering package commands.
         // $this->commands([]);

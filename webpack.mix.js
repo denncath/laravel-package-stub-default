@@ -27,4 +27,6 @@ mix.js(
 
 // Compile published styles and copy fonts
 mix.sass(publicResources + '/scss/app.scss', 'css/app.css');
-mix.copy(publicResources + '/fonts', public + '/fonts');
+
+// Optionally copy fonts to public directory
+//mix.copy(publicResources + '/fonts', public + '/fonts');
