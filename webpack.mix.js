@@ -2,7 +2,7 @@
 const public = "../../../public";
 const publicResources = "resources/vendor/:lc:vendor/:lc:package";
 const nodePath = __dirname + "/node_modules";
-const assetPath = __dirname + "/src/resources/assets";
+const assetPath = __dirname + "/resources/assets";
 
 const { mix } = require("laravel-mix");
 require("laravel-mix-merge-manifest");
@@ -12,7 +12,7 @@ mix.setPublicPath(publicResources).mergeManifest();
 
 // Compile Javascript
 mix.js(
-        [__dirname + "/src/resources/assets/js/app.js",],
+        [assetPath + "/js/app.js",],
     "js/app.js"
 ).webpackConfig({
     resolve: {
