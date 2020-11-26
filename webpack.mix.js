@@ -1,6 +1,6 @@
 // Deployment path
 const public = "../../../public";
-const publicResources = "resources/vendor/:lc:vendor/:lc:package";
+const publicResources = "../../../resources/vendor/:lc:vendor/:lc:package";
 const nodePath = __dirname + "/node_modules";
 const assetPath = __dirname + "/resources/assets";
 
