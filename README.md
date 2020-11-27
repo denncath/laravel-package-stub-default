@@ -9,20 +9,20 @@ This is where your description should go. Take a look at [contributing.md](contr
 
 ## Installation
 
-##### Via Composer
+##### Via Artisan
 
 ``` bash
-$ composer require :lc:vendor/:lc:package
+php artisan packager:new PaperStreet/MyTest
 ```
 
 ##### Integrate :uc:package in your project:
 
-Publish assets:
+Publish assets (scss):
 ``` bash
 php artisan vendor:publish --provider=":uc:vendor\:uc:package\:uc:packageServiceProvider" --force
 ```
 
-Compile assets in package root:
+Compile assets in package root (js):
 ``` bash
 npm install
 npm run watch
@@ -42,7 +42,10 @@ Import styles in `resources/sass/app.scss`
 @import "../vendor/:lc:vendor/:lc:package/scss/variables";
 ```
 
-## Usage
+## Removal
+``` bash
+php artisan packager:remove :lc:vendor/:lc:package
+```
 
 ## Change log
 
@@ -57,6 +60,10 @@ $ composer test
 ## Contributing
 
 Please see [contributing.md](contributing.md) for details and a todolist.
+Create your own package:
+``` bash
+php artisan packager:new MyVendor/MyPackage
+```
 
 ## Security
 
