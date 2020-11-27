@@ -13,8 +13,8 @@ class :uc:packageServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../../resources/lang', ':lc:vendor');
-        // $this->loadViewsFrom(__DIR__.'/../../resources/views', ':lc:vendor');
+        $this->loadTranslationsFrom(__DIR__. '/../../resources/lang', ':lc:package');
+        // $this->loadViewsFrom(__DIR__.'/../../resources/views', ':lc:package');
 
         // $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
         // $this->loadRoutesFrom(__DIR__.'/../../routes/api.php');
