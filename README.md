@@ -7,12 +7,17 @@
 
 This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
 
+## Prerequisites
+``` bash
+composer require jeroen-g/laravel-packager
+```
+
 ## Installation
 
 ##### Via Artisan
 
 ``` bash
-php artisan packager:new PaperStreet/MyTest
+php artisan packager:new PaperStreet/MyTest --skeleton="https://github.com/denncath/laravel-package-stub-default/archive/main.zip"
 ```
 
 ##### Integrate :uc:package in your project:
