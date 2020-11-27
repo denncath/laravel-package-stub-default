@@ -24,7 +24,9 @@ php artisan packager:new PaperStreet/MyTest --skeleton="https://github.com/dennc
 
 Publish assets (scss):
 ``` bash
-php artisan vendor:publish --provider=":uc:vendor\:uc:package\:uc:packageServiceProvider" --force
+php artisan vendor:publish --provider=":uc:vendor\:uc:package\Providers\:uc:packageServiceProvider" --force
+
+Note: path is case-sensitive!
 ```
 
 Compile assets in package root (js):

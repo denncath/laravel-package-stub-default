@@ -62,7 +62,7 @@ class :uc:packageServiceProvider extends ServiceProvider
 
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__ . '/../config/:lc:package.php' => config_path(':lc:package.php'),
+            __DIR__ . '/../../config/:lc:package.php' => config_path(':lc:package.php'),
         ], ':lc:package.config');
 
         // Publishing styles
